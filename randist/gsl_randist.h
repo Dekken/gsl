@@ -1,17 +1,17 @@
 /* randist/gsl_randist.h
- * 
+ *
  * Copyright (C) 1996, 1997, 1998, 1999, 2000, 2007 James Theiler, Brian Gough
- * 
+ *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or (at
  * your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
@@ -151,12 +151,12 @@ double gsl_ran_lognormal_pdf (const double x, const double zeta, const double si
 unsigned int gsl_ran_logarithmic (const gsl_rng * r, const double p);
 double gsl_ran_logarithmic_pdf (const unsigned int k, const double p);
 
-void gsl_ran_multinomial (const gsl_rng * r, const size_t K,
+GSL_VAR void gsl_ran_multinomial (const gsl_rng * r, const size_t K,
                           const unsigned int N, const double p[],
                           unsigned int n[] );
-double gsl_ran_multinomial_pdf (const size_t K,
+GSL_VAR double gsl_ran_multinomial_pdf (const size_t K,
                                 const double p[], const unsigned int n[] );
-double gsl_ran_multinomial_lnpdf (const size_t K,
+GSL_VAR double gsl_ran_multinomial_lnpdf (const size_t K,
                            const double p[], const unsigned int n[] );
 
 
